@@ -3,7 +3,7 @@ import { IWeatherData } from 'src/types/Weather';
 
 const DB_NAME = 'WeatherApp';
 const STORE_NAME = 'WeatherCache';
-const MAX_ENTRIES = 2;
+const MAX_ENTRIES = 100;
 
 export const openDatabase = (): Promise<IDBDatabase> => {
   return new Promise((resolve, reject) => {
